@@ -1,0 +1,94 @@
+body {
+    background-color: darkred;
+}
+
+main {
+    background-color:aliceblue;
+    border: 1px solid black;
+    border-top: 1rem solid;
+    border-bottom: 1rem solid;
+    margin: 0 50px 80px 50px;
+    padding: 40px 500px 40px 30px;
+}
+
+header {
+    font-family: "Arial"; 
+}
+
+section {
+    background-color: rgb(220, 230, 235);
+    padding: 20px 0 20px 10px;
+}
+
+.header1 {
+    color: rgb(165, 11, 11);
+}
+
+table, th, tr {
+    border: 1px solid black; 
+    text-align: left;
+    padding: 10px 10px 10px 5px;
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: smaller;
+    width: 40px;
+}
+
+#legend {
+    background-color: lightgray; 
+    font-size: larger;
+}
+
+.weight{ 
+    width: 30%;
+    padding: 5px;
+}
+
+.grade1, .grade2 {
+    width: 30%;
+    padding: 5px;
+}
+
+#addrow {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+#weighted, #mean {
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(165, 11, 11);
+    color: white;
+    border: 0px;
+}
+
+#weighted {
+    float:left;
+    margin-left: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#mean {
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/calculator.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body class="mainBody">
+    <main class="main">
+        <header><h1 class="title">Grade Calculator</h1></header>
+   
+        <section class="sec1">
+
+        <h2 class="header1">Activities</h2>
+        <p id="descript">Give grades to the numeric activity:</p>
+        
+
+        <table id="table">
+            <tr id="legend"><th>Name</th><th>Short Name</th><th>Weight</th><th>Grade</th><th>Percent</th></tr>
+            <tr id="row1">
+                <th>Activity 1</th>
+                <th>A1</th>
+                <th>
+                    <input name="weight" type="text" class="weight">
+                </th>
+                <th>
+                    <input name="grade1" type="text" class="grade1"> / 
+                    <input name="grade2" type="text" class="grade2">
+                </th>
+                <th class="percentage">
+                    
+                </th>
+            </tr>
+
+            <tr id="row2">
+                <th>Activity 2</th>
+                <th>A2</th>
+                <th>
+                    <input name="weight" type="text" class="weight">
+                </th>
+                <th>
+                    <input name="grade1" type="text" class="grade1"> / 
+                    <input name="grade2" type="text" class="grade2">
+                </th>
+                <th class="percentage">
+                    
+                </th>
+            </tr>
+        </table>
+
+        <form action="/addrow">
+            <input name="addrow" type="button" value="addrow" id="addrow">
+        </form>
+
+       <h2 class="header1">Result</h2>
+       <p id="res"> </p>
+
+            <form action="/weighted">
+                <input name="weighted" type="button" value="WEIGHTED" id="weighted">
+            </form>
+            <form action="/mean">
+                <input name="mean" type="button" value="MEAN" id="mean">
+            </form>
+
+        </section> 
+        
+    </main>
+</body>
+</html>
