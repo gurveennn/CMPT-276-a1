@@ -1,4 +1,8 @@
-FROM eclipse-temurin:21
-RUN mkdir /opt/app
-COPY asn1.jar /opt/app
-CMD ["java", "-jar", "/opt/app/ASN1.jar"]
+FROM maven:3.8.5-openjdk-17 AS build
+COPY . .
+RUN mvn clean package -DskipTests
+
+FROM openjdk:17.0.1-jdk-slim
+COPY --from=build /target/asn1-0.01-SNAPSHOT.jar asn1.jar
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","asn1.jar"] 
