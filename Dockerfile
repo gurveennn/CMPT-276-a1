@@ -1,4 +1,4 @@
 FROM eclipse-temurin:21
-RUN mkdir -p /target
-COPY asn1.jar /target/asn1-0.01-SNAPSHOT.jar
-CMD ["java", "-jar", "/target/asn1-0.01-SNAPSHOT.jar"]
+RUN mkdir /opt/app
+COPY asn1.jar /opt/app
+CMD ["java", "-jar", "/opt/app/asn1.jar"]
