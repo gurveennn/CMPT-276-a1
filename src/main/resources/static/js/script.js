@@ -1,8 +1,6 @@
 // adding percent functions to the inital rows
 var row1 = document.getElementById('row1');
-var row2 = document.getElementById('row2');
 inputPercent(row1);
-inputPercent(row2);
 
 // track number of rows of added
 var tracker = 3; 
