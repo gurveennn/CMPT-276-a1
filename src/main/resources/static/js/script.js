@@ -3,7 +3,7 @@ var row1 = document.getElementById('row1');
 inputPercent(row1);
 
 // track number of rows of added
-var tracker = 3; 
+var tracker = 1; 
 
 // row button
 var addRowButton = document.querySelector('input[value="addrow"]');
@@ -58,6 +58,7 @@ function updatePercentage(evt) {
 
 // add row function
 function addrow() {   
+    tracker++;
     const table = document.getElementById('table');
     const newRow = document.createElement('tr');
     newRow.innerHTML = 
@@ -67,8 +68,7 @@ function addrow() {
         <input name="grade2" type="text" class="grade2"></th><th class="percentage"></th>`;
     table.appendChild(newRow);
     inputPercent(newRow);
-    inputWeight(newRow);
-    tracker++;
+    // inputWeight(newRow);
 }
 
 // mean function for mena button
